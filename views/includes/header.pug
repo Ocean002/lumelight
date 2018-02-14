@@ -1,1 +1,44 @@
-                
+doctype html
+html
+    head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    meta(name='Lume Lighting', content='Personal Web Site')
+    meta(name='description', content='Lume Lighting')
+    // Document title
+    title Lume Lighting | LIGHTING DESIGN PROGRAMMING AND PRE-VISUALIZATION
+    // Stylesheets & Fonts
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700,600|Montserrat:400,500,600,700|Raleway:100,300,600,700,800', rel='stylesheet', type='text/css')
+    link(href='stylesheets/plugins.css', rel='stylesheet')
+    link(href='stylesheets/style.css', rel='stylesheet')
+    link(href='stylesheets/responsive.css', rel='stylesheet')
+// Wrapper
+#wrapper
+// Header
+header#header.header-transparent.header-fullwidth.header-plain.dark
+    #header-wrap
+      .container
+        // Logo
+        #logo
+          a.logo(href='http://localhost:8080', data-dark-logo='images/logo.svg')
+            img(src='images/logo.svg', alt='Logo Lume')
+        // End: Logo
+        // Navigation Resposnive Trigger
+        #mainMenu-trigger
+          button.lines-button.x
+            span.lines
+        // end: Navigation Resposnive Trigger
+        // Navigation
+        #mainMenu.light
+          .container
+            nav
+              ul
+                li.dropdown
+                  a(href='http://localhost:8080/servizi') Servizi
+                li.dropdown
+                  a(href='http://localhost:8080/corsi') Corsi
+                li.dropdown
+                  a(href='http://localhost:8080/about') About
+                li.dropdown
+                  a(href='http://localhost:8080/contatti') Contatti                            
+// end: Header              

@@ -5,10 +5,16 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Lumelight' });
 });
+router.get('/servizi', function(req, res, next) {
+  res.render('servizi.pug', { title: 'About me' });
+});
+router.get('/corsi', function(req, res, next) {
+  res.render('corsi.pug', { title: 'About me' });
+});
 router.get('/about', function(req, res, next) {
   res.render('about.pug', { title: 'About me' });
 });
-router.get('/contact', function(req, res, next) {
-  res.render('contact.pug', { title: 'Contatti' });
+router.get('/contatti', function(req, res, next) {
+  res.render('contatti.pug', { title: 'Contatti' });
 });
 module.exports = router;
