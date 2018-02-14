@@ -6,10 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Lumelight' });
 });
 router.get('/servizi', function(req, res, next) {
-  res.render('servizi.pug', { title: 'About me' });
+  res.render('servizi.pug', { title: 'Servizi' });
 });
 router.get('/corsi', function(req, res, next) {
-  res.render('corsi.pug', { title: 'About me' });
+  res.render('corsi.pug', { title: 'Corsi' });
 });
 router.get('/about', function(req, res, next) {
   res.render('about.pug', { title: 'About me' });
