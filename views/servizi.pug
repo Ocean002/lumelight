@@ -3,8 +3,37 @@ block content
     // SECTION IMAGE FULLSCREEN
     section#section1.parallax.halfscreen(style="background: url('images/teatro.jpg')")
         .container.text-light.text-right
-        .container-fullscreen
-            .text-middle
-            .heading-hero(data-animation='fadeInDown', data-animation-delay='100') Servizi
-            p.lead(data-animation='fadeInDown', data-animation-delay='300') Tecnologia applicata 
-    // end: SECTION IMAGE FULLSCREEN
+            .container-fullscreen
+                .text-left
+                    .heading-hero(data-animation='fadeInDown', data-animation-delay='100') Servizi
+                    p.lead(data-animation='fadeInDown', data-animation-delay='300') Tecnologia applicata 
+    // end: SECTION IMAGE FULLSCREE
+    // ABOUT ME
+    section#section-about.p-b-40
+    .container
+        h2.font-raleway LUME LIGHTING...
+        .row
+        .col-md-6(data-animation='fadeInUp', data-animation-delay='300')
+            p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis.
+            br
+            br
+            | Facilisis ut venenatis eu, sodales vel dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius.
+        .col-md-6(data-animation='fadeInUp', data-animation-delay='600')
+            p
+            | Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
+            br
+            br
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volut.
+    // end: ABOUT ME
+    // portfolio item
+    .portfolio-item.p-20.hover-3d.img-zoom.pf-illustrations.pf-media.pf-icons.pf-Media
+        .portfolio-item-wrap
+            .portfolio-image
+                a(href='#')
+                    img(src='images/teatro.jpg', alt='', width='20%')
+        .portfolio-description
+            a(href='#')
+                h3 Let&apos;s Go Outside
+                    span Illustrations / Graphics
+    // end: portfolio item

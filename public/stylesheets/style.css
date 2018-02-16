@@ -3807,7 +3807,7 @@ body.device-xs {
 /*Transitions*/
 .portfolio-item,
 .grid-item {
-  width: 100%;
+  width: 50%;
   float: left;
   height: auto;
   cursor: pointer;
