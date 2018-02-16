@@ -8,6 +8,18 @@ router.get('/', function(req, res, next) {
 router.get('/servizi', function(req, res, next) {
   res.render('servizi.pug', { title: 'Servizi' });
 });
+router.get('/live', function(req, res, next) {
+  res.render('live.pug', { title: 'Spettacoli live' });
+});
+router.get('/servizi/teatri', function(req, res, next) {
+  res.render('teatri.pug', { title: 'Spettacoli teatrali' });
+});
+router.get('/servizi/televisione', function(req, res, next) {
+  res.render('televisione.pug', { title: 'Televisione' });
+});
+router.get('/servizi/navi', function(req, res, next) {
+  res.render('navi.pug', { title: 'Settore navale' });
+});
 router.get('/corsi', function(req, res, next) {
   res.render('corsi.pug', { title: 'Corsi' });
 });
