@@ -3807,7 +3807,7 @@ body.device-xs {
 /*Transitions*/
 .portfolio-item,
 .grid-item {
-  width: 50%;
+  width: 100%;
   float: left;
   height: auto;
   cursor: pointer;
@@ -3938,7 +3938,7 @@ body.device-xs {
     transform: translate3d(0px, -38%, 0px);
     transition: all 250ms ease-in-out 0s;
     visibility: hidden;
-    width: 70%;
+    width: 100%;
     z-index: 3; }
     .portfolio-item .portfolio-description h3,
     .portfolio-item .grid-description h3,

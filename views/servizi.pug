@@ -26,14 +26,18 @@ block content
             br
             | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volut.
     // end: ABOUT ME
-    // portfolio item
-    .portfolio-item.p-20.hover-3d.img-zoom.pf-illustrations.pf-media.pf-icons.pf-Media
+    .container
+        .portfolio-2-columns
+        // portfolio item
+        .portfolio-item.p-20.hover-3d.img-zoom.pf-illustrations.pf-media.pf-icons.pf-Media
+            .portfolio-item-wrap
+                .portfolio-image
+                    img(src='images/teatro.jpg', alt='')
+                .portfolio-description
+                    h3 Settore Navale
+        // end: portfolio item
+        // portfolio item
         .portfolio-item-wrap
-            .portfolio-image
-                a(href='#')
-                    img(src='images/teatro.jpg', alt='', width='20%')
-        .portfolio-description
-            a(href='#')
-                h3 Let&apos;s Go Outside
-                    span Illustrations / Graphics
+            h3 Testo Prova
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis.
     // end: portfolio item
