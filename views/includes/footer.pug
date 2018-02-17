@@ -1,5 +1,20 @@
 section
-  .footer#footer.footer-light
+// Modal Cookie
+.cookieNotify.modal-strip.modal-bottom.cookie-notify(data-delay='1000', data-expire='30', data-name='websiteCookieslumelighting.com')
+  .container
+    .row
+      .vertical-align
+        .col-md-8.text-sm-center.sm-center.sm-m-b-10.m-t-5
+          | Questo sito utilizza cookies per rendere al meglio la vostra navigazione. 
+          a.text-light(href='#')
+            span
+              | 
+              i.fa.fa-info-circle
+        .col-md-4.text-right.sm-text-center.sm-center
+          button.btn.btn-rounded.btn-sm.m-r-10.modal-close(type='button') Rifiuta
+          button.btn.btn-light.btn-rounded.btn-outline.btn-sm.modal-confirm(type='button') Accetta
+// End: Modal Cookie
+.footer#footer.footer-light
     .footer-content
       .container
         .row
