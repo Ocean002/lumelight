@@ -8,6 +8,15 @@ router.get('/', function(req, res, next) {
 router.get('/servizi', function(req, res, next) {
   res.render('servizi.pug', { title: 'Servizi' });
 });
+router.get('/corsi', function(req, res, next) {
+  res.render('corsi.pug', { title: 'Corsi' });
+});
+router.get('/about', function(req, res, next) {
+  res.render('about.pug', { title: 'About me' });
+});
+router.get('/contatti', function(req, res, next) {
+  res.render('contatti.pug', { title: 'Contatti' });
+});
 router.get('/live', function(req, res, next) {
   res.render('live.pug', { title: 'Spettacoli live' });
 });
@@ -20,13 +29,5 @@ router.get('/televisione', function(req, res, next) {
 router.get('/navi', function(req, res, next) {
   res.render('navi.pug', { title: 'Settore navale' });
 });
-router.get('/corsi', function(req, res, next) {
-  res.render('corsi.pug', { title: 'Corsi' });
-});
-router.get('/about', function(req, res, next) {
-  res.render('about.pug', { title: 'About me' });
-});
-router.get('/contatti', function(req, res, next) {
-  res.render('contatti.pug', { title: 'Contatti' });
-});
+
 module.exports = router;
