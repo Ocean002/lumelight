@@ -1,10 +1,11 @@
 extends layout
 block content
     // SECTION IMAGE FULLSCREEN
-    section.parallax.fullscreen.background-image(style='background-image:url(images/navi.jpg);')              
+    section.parallax.fullscreen.background-image(style='background-image:url(images/nave2.jpg);')              
     // end: SECTION IMAGE FULLSCREEN
     // DDESCRIPTION H1-H2-H3
     .container
+        br
         h1.font-raleway Navi
         .row
             .col-md-6(data-animation='fadeInUp', data-animation-delay='300') Settore navale
@@ -13,9 +14,12 @@ block content
                 br
                 br
                 | Facilisis ut venenatis eu, sodales vel dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius.
-            .col-md-6(data-animation='fadeInUp', data-animation-delay='600')
                 p
                 | Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
-                br
-                br
+                p
                 | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volut.
+            .col-md-6(data-animation='fadeInUp', data-animation-delay='600')    
+                .hr-title.hr-long.center
+                    abbr
+                        | Teatro Nave
+                img(src='images/nave1.jpg', alt='Teatro Nave', width='100%')
