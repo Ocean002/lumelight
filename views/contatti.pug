@@ -5,14 +5,6 @@ block content
         .container
             .page-title
                 h1 Contatti
-        .breadcrumb
-            ul
-                li
-                a(href='#') Home
-                li
-                a(href='#') Portfolio
-                li.active
-                a(href='#') Hover Styles
     // end: Page title
     // CONTENT
     section
@@ -24,6 +16,8 @@ block content
                     | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum porttitor cursus. Duis nec nulla turpis. Nulla lacinia laoreet odio, non lacinia nisl malesuada vel. Aenean malesuada fermentum bibendum.
                     p
                     | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
+                    p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sa
                     .row.m-t-40
                         .col-md-12
                             address
@@ -38,22 +32,19 @@ block content
                 .col-md-6
                     form.widget-contact-form(action='#', role='form', method='post')
                     .row
-                        .form-group.col-sm-6
+                        .form-group.col-sm-12
                         label(for='name') Nome
                         input.form-control.required.name(type='text', aria-required='true', name='widget-contact-form-name', placeholder='Enter your Name')
-                        .form-group.col-sm-6
+                        .form-group.col-sm-12
                         label(for='email') Email
                         input.form-control.required.email(type='email', aria-required='true', name='widget-contact-form-email', placeholder='Enter your Email')
                     .row
                         .form-group.col-sm-12
                         label(for='subject') Oggeto
                         input.form-control.required(type='text', name='widget-contact-form-subject', placeholder='Subject...')
-                    .form-group
+                        .form-group
                         label(for='message') Messaggio
                         textarea.form-control.required(type='text', name='widget-contact-form-message', rows='5', placeholder='Enter your Message')
-                    .form-group
-                        //script(src='https://www.google.com/recaptcha/api.js')
-                        //.g-recaptcha(data-sitekey='6LddCxAUAAAAAKOg0-U6IprqOZ7vTfiMNSyQT2-M')
                     button#form-submit.btn.btn-default(type='submit')
                         i.fa.fa-paper-plane
                         | &nbsp;Invia

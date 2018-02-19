@@ -224,7 +224,7 @@ iframe {
 
 /* Sections */
 section {
-  padding: 20px 0;
+  padding: 40px 40px;
   position: relative;
   z-index: auto;
   width: 100%;
@@ -427,11 +427,11 @@ strong {
     border-color: #fafafa;
 }*/
 a {
-  color: #565656; }
+  color: #fffafa; }
   a:hover, a:focus, a:active {
     text-decoration: none;
     outline: none;
-    color: #1abc9c; }
+    color: #bc321a; }
 
 /*
 // Fonts 
