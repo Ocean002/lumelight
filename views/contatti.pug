@@ -19,26 +19,30 @@ block content
                     p
                     | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sa
                 .col-md-6
-                    form.widget-contact-form(action='#', role='form', method='post')
-                    .row
+                     form#contact(action='contatti', method='POST')
+                        .form-group.col-sm-6
+                            label(for='userName') Nome
+                            input.form-control.required.name(type='text', aria-required='true', name='userName', placeholder='Nome')
+                        .form-group.col-sm-6
+                            label(for='email') Email
+                            input.form-control.required.email(type='email', aria-required='true', name='email', placeholder='Email')
+                        .form-group.col-sm-6
+                            label(for='phone') Telefono
+                            input.form-control.required.phone(type='text', aria-required='true', name='phone', placeholder='Numero di telefono')
+                        .form-group.col-sm-6
+                            label(for='company') Azienda
+                            input.form-control.required.company(type='text', aria-required='false', name='company', placeholder='Nome Azienda')
                         .form-group.col-sm-12
-                        label(for='name') Nome
-                        input.form-control.required.name(type='text', aria-required='true', name='widget-contact-form-name', placeholder='Enter your Name')
-                        .form-group.col-sm-12
-                        label(for='email') Email
-                        input.form-control.required.email(type='email', aria-required='true', name='widget-contact-form-email', placeholder='Enter your Email')
-                    .row
-                        .form-group.col-sm-12
-                        label(for='subject') Oggeto
-                        input.form-control.required(type='text', name='widget-contact-form-subject', placeholder='Subject...')
-                        .form-group
-                        label(for='message') Messaggio
-                        textarea.form-control.required(type='text', name='widget-contact-form-message', rows='5', placeholder='Enter your Message')
-                    button#form-submit.btn.btn-default(type='submit')
-                        i.fa.fa-paper-plane
-                        | &nbsp;Invia
-                    br
-                    br
+                            label(for='textarea') Messaggio
+                            textarea.form-control.required.body(type='body', aria-required='true', name='textarea', rows='9', placeholder='Messaggio')
+                        .row
+                            .text-center
+                                button#submit         
+                                    i.fa.fa-paper-plane
+                                    | &nbsp;Invia
+                        .row
+                        br
+                        h4 #{msg}
             // end: CONTENT
     // MAP            
     section#map
