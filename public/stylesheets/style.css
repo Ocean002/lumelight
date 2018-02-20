@@ -5658,8 +5658,8 @@ span.rec-by {
   position: relative;
   overflow: hidden;
   text-transform: uppercase;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  background-color: #d70808;
+  border-color: #d70808;
   border-width: 1px;
   border-style: solid;
   color: #fff;
@@ -5719,8 +5719,8 @@ span.rec-by {
     border-color: #ebebeb;
     color: #4c5667; }
     .btn.btn-light:hover, .btn.btn-light:focus, .btn.btn-light:active, .btn.btn-light.active {
-      background-color: #1abc9c;
-      border-color: #1abc9c;
+      background-color: #d70808;
+      border-color: #d70808;
       color: #fff; }
     .btn.btn-light.btn-outline {
       border-color: #ffffff;
@@ -5738,7 +5738,7 @@ span.rec-by {
     border-color: #111111;
     color: #ffffff; }
     .btn.btn-dark:hover, .btn.btn-dark:focus, .btn.btn-dark:active, .btn.btn-dark.active {
-      background-color: #1abc9c;
+      background-color: #d70808c;
       border-color: #1abc9c;
       color: #fff; }
     .btn.btn-dark.btn-outline {

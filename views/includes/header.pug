@@ -1,20 +1,3 @@
-doctype html
-html
-    head
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(http-equiv='content-type', content='text/html; charset=utf-8')
-    meta(name='Lume Lighting', content='Personal Web Site')
-    meta(name='description', content='Lume Lighting')
-    // Document title
-    title Lume Lighting | LIGHTING DESIGN PROGRAMMING AND PRE-VISUALIZATION
-    link(rel='icon', href='https://www.lumelight.it/images/logo/favicon.ico', type='image/png')
-    // Stylesheets
-    link(href='stylesheets/plugins.css', rel='stylesheet')
-    link(href='stylesheets/style.css', rel='stylesheet')
-    link(href='stylesheets/responsive.css', rel='stylesheet')
-    // LOADING FONTS AND ICONS
-    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700,600|Montserrat:400,500,600,700|Raleway:100,300,600,700,800', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', type='text/css', href='fonts/fontawesome-webfont.ttf')
 // Wrapper
 #wrapper
 // Header
@@ -23,8 +6,8 @@ header#header.header-transparent.header-fullwidth.header-plain.dark
     .container
       // Logo
       #logo
-        a.logo(href='https://www.lumelight.it', data-dark-logo='images/logo.svg')
-          img(src='images/logo.svg', alt='Logo Lume')
+        a.logo(href='https://www.lumelight.it') LUME LIGHITNG
+          //img(src='images/logo.png', alt='Logo Lume')
       // End: Logo
       // Navigation Resposnive Trigger
       #mainMenu-trigger
@@ -36,6 +19,8 @@ header#header.header-transparent.header-fullwidth.header-plain.dark
         .container
           nav
             ul
+              li.dropdown
+                a(href='https://www.lumelight.it') Home
               li.dropdown
                 a(href='https://www.lumelight.it/servizi') Servizi
                 ul.dropdown-menu
