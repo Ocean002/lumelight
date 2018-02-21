@@ -1,29 +1,20 @@
 extends layout
 block content
-  // SECTION IMAGE FULLSCREEN
-  section#section1.parallax.halfscreen(style="background: url('images/teatro.jpg')")
-    .container.text-light.text-right
-      .container-fullscreen
-        .text-middle
-          .heading-hero(data-animation='fadeInDown', data-animation-delay='100') Marco Di Febo
-          p.lead(data-animation='fadeInDown', data-animation-delay='300') Welcome to my personal portfolio
-  // end: SECTION IMAGE FULLSCREEN
-  // ABOUT
-  section#section2
+    section.parallax.fullscreen.background-image(style='background-image:url(images/marco1.jpg);')              
     .container
-      .row.m-b-50
-        .col-md-3
-          .heading.heading.text-left
-            h2 ABOUT ME
-        .col-md-9
-          .row
-            .col-md-6
-              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat,
-              br
-              br
-              |  facilisis ut venenatis eu, sodales vel dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
-            .col-md-6
-              | Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
-              br
-              br
-              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volut.
+        .heading.heading.text-left
+        h1 Marco Di Febo
+        h2 Sottotitolo
+        .row
+            .col-md-6(data-animation='fadeInUp', data-animation-delay='600')
+                p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis.
+                br
+                br
+                | Facilisis ut venenatis eu, sodales vel dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius.
+            .col-md-6(data-animation='fadeInUp', data-animation-delay='600')
+                p
+                | Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
+                br
+                br
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volut.

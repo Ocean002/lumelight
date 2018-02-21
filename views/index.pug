@@ -11,28 +11,32 @@ block content
           img(src='images/logo.svg', alt='Logo Lume', width='300px')
           //a.btn.btn-primary(href='#youtube') Scopri il futuro
   // end: SECTION IMAGE FULLSCREEN
-  // COMPANY
-  section#p-b-10
-    .container
-        .row
-          .col-md-6
-            .heading.heading.text-left
-              h1 LIGHTING DESIGN PROGRAMMING AND PRE-VISUALIZATION
-              span.lead
-                | Lume Lighting è in grado di progettare, programmare e pre-visualizzare un evento nelle sue singole complessità e forme artistiche già prima che lo spettacolo stesso si compia attraverso l’utilizzo di innovative tecnologie all’avanguardia. Il successo di un evento, infatti, si basa su un'attenta valutazione delle problematiche e dalla capacità di individuare le giuste soluzioni tecniche/artistiche necessarie alla sua buona riuscita. Questo è il motivo per il quale Lume Lighting è nata ed è in continuo sviluppo.
-                | LUME Lighting, le tue idee in luce.
-          .col-md-6.m-t-60
-              img(src='images/teatro.jpg', alt='Logo Lume', width="100%")
-  // end: COMPANY
   // SECTION TEXT ROTATOR
   section#text-rotatory
     .container-fullscreen.text-center
       .text-middle
-        h4(data-animation='fadeInUp', data-animation-delay='1200') Pre-visualizzazione dell'illuminazione
-        h1.text-large(data-animation='fadeIn', data-animation-delay='500')
-          span.text-rotator(data-rotate-effect='fadeIn', data-rotate-speed='3000') THE POWER , OF WYSING, WHIT, LUME LIGHTING
-        a.btn.btn-primary(href='https://www.lumelight.it/servizi') Settori di applicazione
+        h1(data-animation='fadeInUp', data-animation-delay='1200') Pre-visualizzazione dell'illuminazione
+        h2.text-large(data-animation='fadeIn', data-animation-delay='500') 
+          span.text-rotator(data-rotate-effect='fadeIn', data-rotate-speed='3000') LA POTENZA DEL WYSIWYG, CON, LUME LIGHTING 3 DESIGN
+  .seperator.p-b-0.p-t-0
+    i.fa.fa-chevron-down
   // END :SECTION TEXT ROTATOR
+  // COMPANY
+  section#p-b-10
+    .container
+        .row
+          .col-md-6.m-t-60
+            .heading.heading.text-left
+              h1 LIGHTING DESIGN PROGRAMMING AND PRE-VISUALIZATION
+              span.lead
+                h4 Lume Lighting è in grado di progettare, programmare e pre-visualizzare un evento nelle sue singole complessità e forme artistiche già prima che lo spettacolo stesso si compia attraverso l’utilizzo di innovative tecnologie all’avanguardia. Il successo di un evento, infatti, si basa su un'attenta valutazione delle problematiche e dalla capacità di individuare le giuste soluzioni tecniche/artistiche necessarie alla sua buona riuscita. Questo è il motivo per il quale Lume Lighting è nata ed è in continuo sviluppo.
+                h4 LUME Lighting, le tue idee in luce.
+          .col-md-6.m-t-60
+                img(src='images/teatro.jpg', alt='Logo Lume', width='100%')
+        a.btn.btn-primary(href='https://www.lumelight.it/servizi') Settori di applicazione
+  .seperator.p-b-0.p-t-0
+    i.fa.fa-chevron-down
+  // end: COMPANY
   // SECTION IMAGE FULLSCREEN
   section#youtube
     .container
@@ -63,5 +67,14 @@ block content
             img(src='images/logo_msc.jpg', alt='')
     br
     br
-    img(src='images/FARO_FRONT.svg', alt='Logo Lume', width="100%")
+  section#text-rotatory.halfscreen.background-image(style='background-image:url(images/FARO_FRONT.svg);')
+    #calltoaction
+      .container
+        .text-center
+          h2(data-animation='fadeInUp', data-animation-delay='1200') Stai programmando il tuo prossimo spettacolo?
+          h2.text(data-animation='fadeIn', data-animation-delay='300') Scopri i vantaggi della pre-programmazione
+          h2.text(data-animation='fadeIn', data-animation-delay='500') Contattami per ricevere una consulenza
+            br
+            span.text-rotator(data-rotate-effect='fadeIn', data-rotate-speed='3000') GRATUITA
+          a.btn.btn-primary(href='https://www.lumelight.it/contatti') Richiedi
         
