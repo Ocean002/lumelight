@@ -29,9 +29,8 @@ router.get('/televisivo', function(req, res, next) {
 router.get('/navale', function(req, res, next) {
     res.render('navale.pug', { title: 'Settore navale' });
 });
-router.get('/Disco&Club', function(req, res, next) {
+router.get('/disco&club', function(req, res, next) {
     res.render('disco&club.pug', { title: 'Settore Disco e club' });
 });
-
 
 module.exports = router;
