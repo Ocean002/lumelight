@@ -3,31 +3,35 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Lumelight' });
+    res.render('index', { title: 'Lumelight' });
 });
 router.get('/servizi', function(req, res, next) {
-  res.render('servizi.pug', { title: 'Servizi' });
+    res.render('servizi.pug', { title: 'Servizi' });
 });
 router.get('/corsi', function(req, res, next) {
-  res.render('corsi.pug', { title: 'Corsi' });
+    res.render('corsi.pug', { title: 'Corsi' });
 });
 router.get('/about', function(req, res, next) {
-  res.render('about.pug', { title: 'About me' });
+    res.render('about.pug', { title: 'About me' });
 });
 router.get('/contatti', function(req, res, next) {
-  res.render('contatti.pug', { title: 'Contatti' });
+    res.render('contatti.pug', { title: 'Contatti' });
 });
 router.get('/live', function(req, res, next) {
-  res.render('live.pug', { title: 'Spettacoli live' });
+    res.render('live.pug', { title: 'Spettacoli live' });
 });
 router.get('/teatri', function(req, res, next) {
-  res.render('teatri.pug', { title: 'Spettacoli teatrali' });
+    res.render('teatri.pug', { title: 'Spettacoli teatrali' });
 });
-router.get('/televisione', function(req, res, next) {
-  res.render('televisione.pug', { title: 'Televisione' });
+router.get('/televisivo', function(req, res, next) {
+    res.render('televisivo.pug', { title: 'Settore televisivo' });
 });
-router.get('/navi', function(req, res, next) {
-  res.render('navi.pug', { title: 'Settore navale' });
+router.get('/navale', function(req, res, next) {
+    res.render('navale.pug', { title: 'Settore navale' });
 });
+router.get('/Disco&Club', function(req, res, next) {
+    res.render('disco&club.pug', { title: 'Settore Disco e club' });
+});
+
 
 module.exports = router;

@@ -20,45 +20,45 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 /* GET home page. */
-app.get('/contatti', function(req, res){
-  res.render('contatti');
-}); 
+app.get('/contatti', function(req, res) {
+    res.render('contatti');
+});
 
 app.post('/contatti', function(req, res) {
-  
-  var api_key = '@';
-  var domain = '@';
-  var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
-   
-  var data = {
-    from: 'Lume Lighting Team Team <@>',
-    to: 'infolumelighting@gmail.com',
-    subject: 'Hello',
-    html: 'UserName: '+req.body.userName+
-          'Email: '+req.body.email+ 
-          'Phone: '+req.body.phone+ 
-          'Company: '+req.body.company+ 
-          'Textarea: '+req.body.textarea
-  };
-  mailgun.messages().send(data, function (error, body) {
-    console.log(body);
-    res.render('contatti', {
-      msg:'Grazie. Il messaggio è stato inviato'
-    })
+
+    var api_key = '@';
+    var domain = '@';
+    var mailgun = require('mailgun-js')({ apiKey: api_key, domain: domain });
+
+    var data = {
+        from: 'Lume Lighting Team Team <@>',
+        to: 'infolumelighting@gmail.com',
+        subject: 'Hello',
+        html: 'UserName: ' + req.body.userName +
+            'Email: ' + req.body.email +
+            'Phone: ' + req.body.phone +
+            'Company: ' + req.body.company +
+            'Textarea: ' + req.body.textarea
+    };
+    mailgun.messages().send(data, function(error, body)  {
+        console.log(body);
+        res.render('contatti', {
+            msg: 'Grazie. Il messaggio è stato inviato'
+        })
     });
-  });
+});
 
 var expiryDate = new Date(Date.now() + 60 * 60 * 1000) // 1 hour
 app.use(session({
-  name: 'session',
-  keys: ['', ''],
-  cookie: {
-    secure: true,
-    httpOnly: true,
-    domain: 'lumelight.it',
-    path: 'foo/bar',
-    expires: expiryDate
-  }
+    name: 'session',
+    keys: ['', ''],
+    cookie: {
+        secure: true,
+        httpOnly: true,
+        domain: 'lumelight.it',
+        path: 'foo/bar',
+        expires: expiryDate
+    }
 }));
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -75,24 +75,24 @@ app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
+    var err = new Error('Not Found');
+    err.status = 404;
+    next(err);
 });
 
 // error handler
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+    // set locals, only providing error in development
+    res.locals.message = err.message;
+    res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
+    // render the error page
+    res.status(err.status || 500);
+    res.render('error');
 });
 var path = require('path')
-app.get('*', (req, res)=>{
-  res.sendFile(path.join(__dirname, '../build/index.pug'));
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build/index.pug'));
 })
 
 module.exports = app;
