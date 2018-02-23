@@ -8,8 +8,6 @@ Large devices
 Desktops (≥1200px) 
 */
 
-
-
 @media (min-width: 1240px) {
     body.boxed #wrapper,
     body.boxed-simple #wrapper {
@@ -23,11 +21,13 @@ Desktops (≥1200px)
         padding: 20px;
     }
 }
+
 @media (min-width: 992px) and (max-width: 1199px) {
     .news-section-wrapper {
         padding: 0 40px
     }
 }
+
 
 /*
 Medium devices
@@ -39,8 +39,6 @@ Desktops (≥992px)
         width: 100%;
         margin: 0;
     }
-    
-        
     .p-t-200 {
         padding-top: 80px !important;
     }
@@ -71,7 +69,7 @@ Desktops (≥992px)
         display: none;
     }
     .news-section-wrapper {
-        padding: 0px
+        padding: 0px;
     }
     /*  widgets*/
     .widget {
@@ -346,7 +344,6 @@ Desktops (≥992px)
     .sm-m-100 {
         margin: 100px!important
     }
-   
     /* ----------------------------------------------------------------
         Creative Profile Page
     -----------------------------------------------------------------*/
@@ -385,6 +382,7 @@ Desktops (≥992px)
         
     }*/
 }
+
 
 /*
 Small devices
@@ -444,7 +442,6 @@ Tablets (≥768px)
     .p-xs-20 {
         padding: 20px !important;
     }
-
     /*	Creative Profile Page */
     .profile-content .profile-image .profile-name h3 {
         display: none;
@@ -453,6 +450,7 @@ Tablets (≥768px)
         width: 470px;
     }
 }
+
 @media (min-width: 480px) and (max-width: 767px) {
     .container {
         width: 470px !important;
@@ -486,6 +484,7 @@ Tablets (≥768px)
         padding: 20px;
     }
 }
+
 @media (max-width: 479px) {
     .container {
         width: 100% !important;
@@ -502,7 +501,6 @@ Tablets (≥768px)
     .grid-articles.grid-articles-v2:not(.post-carousel) .post-entry:nth-child(2) .post-entry-meta .post-entry-meta-title h2 a {
         font-size: 16px;
     }
-
     /*	post columns*/
     .post-2-columns .post-item,
     .post-3-columns .post-item,
@@ -523,7 +521,6 @@ Tablets (≥768px)
         width: 100%;
         padding: 0;
     }
-
     /*****SHORTCODES *****/
     /*countdown*/
     .countdown .countdown-box {
@@ -568,7 +565,6 @@ Tablets (≥768px)
         font-size: 40px !important;
         line-height: 40px !important;
     }
- 
     /*	Creative Profile Page */
     .profile-content .profile-image {
         height: 200px;

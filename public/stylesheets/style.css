@@ -333,7 +333,7 @@ section {
 }
 
 ::-webkit-selection {
-    background: #1abc9c;
+    background: #07856c;
     /* Safari */
     color: #FFF;
     text-shadow: none;
@@ -358,7 +358,7 @@ html {
 }
 
 body {
-    font-size: 1em;
+    font-size: 1.5em;
     line-height: 1.65714286em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -382,7 +382,7 @@ h6,
     font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
     color: #252525;
     margin: 0;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 1px;
 }
 
@@ -416,7 +416,7 @@ h2,
 .h2 {
     font-size: 2.35714286em;
     line-height: 1.36363636em;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h2:not(:last-child),
@@ -428,7 +428,7 @@ h3,
 .h3 {
     font-size: 1.78571429em;
     line-height: 1.5em;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h3:not(:last-child),
@@ -440,7 +440,7 @@ h4,
 .h4 {
     font-size: 1.35714286em;
     line-height: 1.68421053em;
-    font-weight: 600;
+    font-weight: 200;
 }
 
 h4:not(:last-child),
@@ -501,7 +501,7 @@ h6:not(:last-child),
 
 p {
     font-family: "Open Sans";
-    font-size: 18px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
     text-transform: none;
@@ -538,7 +538,7 @@ strong {
 }*/
 
 a {
-    color: #fffafa;
+    color: #1440ed;
 }
 
 a:hover,
@@ -3217,7 +3217,7 @@ Main menu - Vertical
 #mainMenu.menu-vertical nav>ul>li .dropdown-menu,
 #mainMenu.menu-center.menu-vertical nav>ul>li .dropdown-menu {
     background-image: none !important;
-    max-height: 0;
+    max-height: 100%;
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.5s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.5s cubic-bezier(0.77, 0, 0.175, 1);
@@ -19118,7 +19118,7 @@ body.device-xs .col-md-3 .flickr-widget img {
 }
 
 
-/*# sourceMappingURL=widgets.css.map */
+/* sourceMappingURL=widgets.css.map */
 
 
 /* ----------------------------------------------------------------------
@@ -19149,7 +19149,7 @@ body.device-xs .col-md-3 .flickr-widget img {
 }
 
 
-/*# sourceMappingURL=colors.css.map */
+/* sourceMappingURL=colors.css.map */
 
 #youtube {
     background-color: #ebf1f2;
@@ -19162,5 +19162,5 @@ body.device-xs .col-md-3 .flickr-widget img {
 #calltoaction h2,
 h3 {
     color: #469af4;
-    font-size: 0, 5em;
+    font-size: 1.5em;
 }
