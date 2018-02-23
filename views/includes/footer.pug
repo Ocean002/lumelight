@@ -11,19 +11,70 @@
         .col-md-4.text-right.sm-text-center.sm-center
           button.btn.btn-rounded.btn-sm.m-r-10.modal-close(type='button') Rifiuta
           button.btn.btn-light.btn-rounded.btn-outline.btn-sm.modal-confirm(type='button') Accetta
-.footer#footer.footer-light
-    .copyright-content
-      .container
-        .row
-          .col-md-12
-            .social-icons.social-icons-border.m-t-20
-              ul
-                li.social-facebook
-                  a(href='#')
-                    i.fa.fa-facebook
-                li.social-youtube
-                  a(href='#')
-                    i.fa.fa-youtube
-            .copyright-text.text-center
-              |&copy; 2018 LUME LIGHTING - CREATIVE LIGHT. All Rights Reserved.
-              a(href='#', target='_blank') LUME ACADEMY
+// Footer
+footer#footer.footer-light
+  .footer-content
+    .container
+      .row
+        .col-md-4
+          .widget.widget-contact-us(style="background-image: url('images/world-map-dark.png'); background-position: 50% 20px; background-repeat: no-repeat")
+            h4 Lume Lighting
+            br
+            br
+            br
+            br
+            br
+            br
+        .col-md-4
+          .grid-item
+            // Testimonials carousel
+            .widget
+              h4.widget-title Testimonial
+              .carousel.arrows-visibile.testimonial.testimonial-single(data-items='1', data-arrows='false')
+                .testimonial-item
+                  img(src='images/profilo.jpg', alt='')
+                  p
+                    | I would highly recommend this template, you simply just won&apos;t find any better one in themeforest!
+                  span Alan Monre
+                  span CEO, Square Software
+                // end: Testimonials item
+                // Testimonials item
+                .testimonial-item
+                  img(src='images/team/8.jpg', alt='')
+                  p
+                    | Polo is by far the most amazing template out there! I literally could not be happier that I chose to buy this template!
+                  span Alan Monre
+                  span CEO, Square Software
+                // end: Testimonials item
+                // Testimonials item
+                .testimonial-item
+                  img(src='images/team/9.jpg', alt='')
+                  p
+                    | Support is by far the best one i&apos;ve ever worked with. They truly understood the look I was going for and completely nailed it!
+                  span Alan Monre
+                  span CEO, Square Software
+        .col-md-4
+          .grid-item
+            .widget
+             h4.widget-title Seguimi su
+             .social-icons.social-icons-medium.social-icons-rounded.social-icons-colored
+                ul
+                  li.social-facebook
+                    a(href='#')
+                      i.fa.fa-facebook
+                  li.social-youtube
+                    a(href='#')
+                      i.fa.fa-youtube
+                  li.social-skype
+                    a(href='#')
+                      i.fa.fa-skype
+                  li.social-linkedin
+                    a(href='#')
+                      i.fa.fa-linkedin
+  .copyright-content
+    .container
+      .copyright-text.text-center
+        | &copy; 2018 LUME LIGHTING - CREATIVE LIGHT. All Rights Reserved.
+a#goToTop
+  i.fa.fa-angle-up.top-icon
+  i.fa.fa-angle-up
