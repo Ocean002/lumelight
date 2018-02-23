@@ -1,27 +1,20 @@
 extends layout
 block content
-  // SECTION IMAGE FULLSCREEN
   section.fullscreen.background-image(style='background-image:url(images/sfondo.jpg);')
     #particles-js.particles
     .container-fluid
       .container-fullscreen
         .text-middle.text-center.text-light
-          //h3.m-b-0 LIGHTING DESIGN PROGRAMMING AND PRE-VISUALIZATION
-          //h2.text-large.m-t-0 Lume Lighting
           img(src='images/logo.svg', alt='Logo Lume', width='300px')
-          //a.btn.btn-primary(href='#youtube') Scopri il futuro
-  // end: SECTION IMAGE FULLSCREEN
-  // SECTION TEXT ROTATOR
   section#text-rotatory
     .container-fullscreen.text-center
       .text-middle
         h1(data-animation='fadeInUp', data-animation-delay='1200') PRE-PROGRAMMAZIONE | PRE-VISUALIZZAZIONE
         h2.text-large(data-animation='fadeIn', data-animation-delay='500') 
           span.text-rotator(data-rotate-effect='fadeIn', data-rotate-speed='3000') LA POTENZA DEL WYSIWYG CON, LUME LIGHTING 3 DESIGN
+        img(src='images/wysiwyg.jpg', alt='Logo Wisiwyg', width='300px')
   .seperator.p-b-0.p-t-0
     i.fa.fa-chevron-down
-  // END :SECTION TEXT ROTATOR
-  // COMPANY
   section#p-b-10
     .container
         .row
@@ -40,15 +33,12 @@ block content
         a.btn.btn-lg(href='https://www.lumelight.it/servizi') Settori di applicazione
   .seperator.p-b-0.p-t-0
     i.fa.fa-chevron-down
-  // end: COMPANY
-  // SECTION IMAGE FULLSCREEN
   section#youtube
     .container
       iframe(width='560', height='315', src='https://www.youtube.com/embed/wAaDXeBzFh0?rel=0&controls=0&showinfo=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
   .seperator.p-b-0.p-t-0
     i.fa.fa-chevron-down
-  // CLIENTS
-  section
+  section#collaborazioni
     .container
       .heading.heading-center
         h2 Collaborazioni
