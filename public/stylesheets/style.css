@@ -7842,8 +7842,8 @@ span.rec-by {
     position: relative;
     overflow: hidden;
     text-transform: uppercase;
-    background-color: #d70808;
-    border-color: #d70808;
+    background-color: #087dd7;
+    border-color: #087dd7;
     border-width: 1px;
     border-style: solid;
     color: #fff;
@@ -7907,7 +7907,7 @@ span.rec-by {
 .btn.btn-outline:focus,
 .btn.btn-outline:active,
 .btn.btn-outline.active {
-    background-color: #1abc9c;
+    background-color: #00ae8b;
     border-width: 2px;
     border-style: solid;
     border-color: #1abc9c;
