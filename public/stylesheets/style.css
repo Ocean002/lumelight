@@ -480,7 +480,7 @@ h6:not(:last-child),
 @media all and (max-width: 767px) {
     h1,
     .h1 {
-        font-size: 2.35714286em;
+        font-size: 1.35714286em;
         line-height: 1.36363636em;
     }
     h2,
