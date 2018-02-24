@@ -19164,3 +19164,7 @@ h3 {
     color: #469af4;
     font-size: 1.5em;
 }
+
+.parallax.fullscreen.background-image {
+    height: 100%
+}
