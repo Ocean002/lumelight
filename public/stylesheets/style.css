@@ -19168,3 +19168,7 @@ h3 {
 .parallax.fullscreen.background-image {
     height: 100%
 }
+
+#contatti h2 {
+    color: white;
+}

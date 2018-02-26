@@ -2,14 +2,12 @@ extends layout
 block content
     section#page-title.page-title-center(data-parallax-image='images/contatti.jpg')
         .container
-            .page-title
-                h1 Contatti
-    section
-        .container
+            .heading.heading.text-left
+                .page-title
+                    h1 Contatti
             .row
                 .col-md-12
-                    p
-                    | Per qualsiasi informazioni sulla formazioni e i servizi offerti, vi invitiamo a contattarci. Vi risponderemo nel più breve tempo possibile.
+                    h2 Per qualsiasi informazioni sulla formazioni e i servizi offerti, vi invitiamo a contattarci. Vi risponderemo nel più breve tempo possibile.
             .row
                 .col-md-12
                      form#contact(action='contatti', method='POST')
