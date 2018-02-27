@@ -17,23 +17,20 @@ router.get('/about', function(req, res, next) {
 router.get('/contatti', function(req, res, next) {
     res.render('contatti.pug', { title: 'Contatti' });
 });
-router.get('/live', function(req, res, next) {
-    res.render('live.pug', { title: 'Spettacoli live' });
+router.get('/settore-live', function(req, res, next) {
+    res.render('settore-live.pug', { title: 'Spettacoli live' });
 });
-router.get('/teatri', function(req, res, next) {
-    res.render('teatri.pug', { title: 'Spettacoli teatrali' });
+router.get('/settore-teatrale', function(req, res, next) {
+    res.render('settore-teatrale.pug', { title: 'Spettacoli teatrali' });
 });
-router.get('/televisivo', function(req, res, next) {
-    res.render('televisivo.pug', { title: 'Settore televisivo' });
+router.get('/settore-televisivo', function(req, res, next) {
+    res.render('settore-televisivo.pug', { title: 'Settore televisivo' });
 });
-router.get('/navale', function(req, res, next) {
-    res.render('navale.pug', { title: 'Settore navale' });
+router.get('/settore-navale', function(req, res, next) {
+    res.render('settore-navale.pug', { title: 'Settore navale' });
 });
-router.get('/disco-club', function(req, res, next) {
-    res.render('disco-club.pug', { title: 'Settore Disco e club' });
-});
-router.get('/modelli', function(req, res, next) {
-    res.render('modelli.pug', { title: 'Settore Disco e club' });
+router.get('/settore-discoteche-club', function(req, res, next) {
+    res.render('settore-discoteche-club.pug', { title: 'Settore Disco e club' });
 });
 
 module.exports = router;
