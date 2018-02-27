@@ -32,7 +32,7 @@ app.post('/contatti', function(req, res) {
 
     var data = {
         from: 'Lume Lighting Team Team <>',
-        to: 'infolumelighting@gmail.com',
+        to: 'difebomarco@yahoo.it',
         subject: 'Hello',
         html: 'UserName: ' + req.body.userName +
             'Email: ' + req.body.email +

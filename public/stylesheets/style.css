@@ -11769,7 +11769,7 @@ form .btn {
 }
 
 .form-group label {
-    color: #444;
+    color: #fffefe;
     cursor: pointer;
     display: inline-block;
     margin-top: 8px;
@@ -19169,6 +19169,6 @@ h3 {
     height: 100%
 }
 
-#contatti h2 {
-    color: white;
+.contatti h2 {
+    color: #ffffff;
 }
