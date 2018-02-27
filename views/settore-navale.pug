@@ -1,22 +1,28 @@
 extends layout
 block content
-    section.parallax.fullscreen.background-image(style='background-image:url(images/live.jpg);')              
+    section.parallax.fullscreen.background-image(style='background-image:url(images/nave2.jpg);')              
     .container
         .heading.heading.text-left
             .page-title
-                hr.space
-                h1 LIVE SHOW
+                h1 Settore navale
         .row
-            .col-md-6(data-animation='fadeInUp', data-animation-delay='600')
+            .col-md-6(data-animation='fadeInUp', data-animation-delay='300') 
                 p
-                | Nel panorama degli spettacoli live, il nostro modo nuovo di lavorare può rappresentare la svolta tecnologi-ca e pratica per un grande risparmio in termini di tempo e soprattutto di risorse economiche. 
+                | Il team creativo può visualizzare, programmare e modificare l’intero allestimento scenico, illuminotecnico e coreografico direttamente dai propri uffici senza la necessità di recarsi in nave.
                 br
                 br
-                | Sia le grandi quanto le medie o piccole produzioni avranno la possibilità di pre-programmare e progettare lo show anticipatamente e nella tranquillità del proprio ambiente di lavoro, evitando trasferte costose e allestimenti tecnici inadeguati, utilizzando le proprie console luci e Media Server per svolgere al meglio la quasi totalità del lavoro creativo.
-            .col-md-6(data-animation='fadeInUp', data-animation-delay='600')
-                p
-                | La nostra idea di tecnologia è da sempre centrata sul risparmio di tempo e di denaro, ma deve sempre mantenersi sui canoni della semplicità e dell’immediatezza per poter essere un efficace supporto per il la-voro di tecnici ed artisti.
-                br
+                | Abbattuti i costi per le spese di trasferta, i consumi energetici ed anche le emissioni di CO2, tutto il lavoro sarà concentrato sulla qualità del prodotto finito, volto alla piena soddisfazione del passeggero.
+            .col-md-6(data-animation='fadeInUp', data-animation-delay='600')    
+                .hr-title.hr-long.center
+                    abbr
+                        | Teatro Nave
+                img(src='images/nave1.jpg', alt='Teatro Nave', width='100%')
+    br
+    br
+    // SECTION IMAGE FULLSCREEN
+    section#youtube
+        .container
+            iframe(width='560', height='315', src='https://www.youtube.com/embed/Unt9RC930w4?rel=0&amp;controls=0&amp;showinfo=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
     section.gallery
     .hr-title.hr-long.center
         abbr Altri settori
@@ -24,9 +30,9 @@ block content
         .portfolio-item.img-zoom.pf-illustrations.pf-uielements.pf-media
             .portfolio-item-wrap
                 .portfolio-image
-                    img(src='images/nave1.jpg', alt='wysiwing settore navale')
+                    img(src='images/live.jpg', alt='wysiwing live')
                 .portfolio-description
-                     a.btn.btn(href='https://www.lumelight.it/navale') Settore Navale
+                     a.btn.btn(href='https://www.lumelight.it/live') Live
         .portfolio-item.img-zoom.pf-illustrations.pf-uielements.pf-media
             .portfolio-item-wrap
                 .portfolio-image
