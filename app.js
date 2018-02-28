@@ -26,13 +26,13 @@ app.get('/contatti', function(req, res) {
 
 app.post('/contatti', function(req, res) {
 
-    var api_key = '';
-    var domain = '';
+    var api_key = 'key-6ad39e7389043f8d687a061ec63a85bd';
+    var domain = 'mg.lumelight.it';
     var mailgun = require('mailgun-js')({ apiKey: api_key, domain: domain });
 
     var data = {
-        from: 'Lume Lighting Team Team <>',
-        to: 'difebomarco@yahoo.it',
+        from: 'Lume Lighting Team Team <postmaster@mg.lumelight.it>',
+        to: 'nardinodimarco@gmail.com',
         subject: 'Hello',
         html: 'UserName: ' + req.body.userName +
             'Email: ' + req.body.email +
@@ -51,7 +51,7 @@ app.post('/contatti', function(req, res) {
 var expiryDate = new Date(Date.now() + 60 * 60 * 1000) // 1 hour
 app.use(session({
     name: 'session',
-    keys: ['', ''],
+    keys: ['buturuzzo1', 'buturuzzo2'],
     cookie: {
         secure: true,
         httpOnly: true,
