@@ -1,39 +1,131 @@
-extends layout
-block content
-    section#page-title.page-title-center(data-parallax-image='images/contatti.jpg')
-        .container.contatti
-            .heading.heading.text-left
-                .page-title
-                    h1 Contatti
-            .row
-                .col-md-12
-                    h2 Per qualsiasi informazioni sulla formazioni e i servizi offerti, vi invitiamo a contattarci. Vi risponderemo nel più breve tempo possibile.
-            .row
-                .col-md-12
-                     form#contact(action='contatti', method='POST')
-                        .form-group.col-sm-6
-                            label(for='userName') Nome
-                            input.form-control.required.name(type='text', aria-required='true', name='userName', placeholder='Nome')
-                        .form-group.col-sm-6
-                            label(for='email') Email
-                            input.form-control.required.email(type='email', aria-required='true', name='email', placeholder='Email')
-                        .form-group.col-sm-6
-                            label(for='phone') Telefono
-                            input.form-control.required.phone(type='text', aria-required='true', name='phone', placeholder='Numero di telefono')
-                        .form-group.col-sm-6
-                            label(for='company') Azienda
-                            input.form-control.required.company(type='text', aria-required='false', name='company', placeholder='Nome Azienda')
-                        .form-group.col-sm-12
-                            label(for='textarea') Messaggio
-                            textarea.form-control.required.body(type='body', aria-required='true', name='textarea', rows='9', placeholder='Messaggio')
-                        .row
-                            .text-center
-                                button#submit         
-                                    i.fa.fa-paper-plane
-                                    | &nbsp;Invia
-                        .row
-                        h2 #{msg} 
-                                #recaptcha.g-recaptcha(data-sitekey='6LdIakkUAAAAAK578ArvCRUa964jkBb4Hf0uhZUs', data-callback='onSubmit', data-badge='inline', data-size='invisible')
-    script(src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit', async='', defer='')
-    section#map
-        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.931129047255!2d14.003608615466597!3d42.68400117916652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d933541e354cb2b!2sLume+Lighting!5e0!3m2!1sit!2sit!4v1519034810932', width='100%', height='450', frameborder='0', style='border:0', allowfullscreen='')
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(name='creator', content='Lume Lighting - https://www.lumelight.it')
+        meta(name='description', content= 'Lume Lighting ha la sua sede operativa a Roseto degli Abruzzi (TE), ma è anche operativa su tutto il territorio nazionale ed internazionale.')
+        title Lumelight.it - Contatti Lume Lighting
+        link(href='stylesheets/plugins.css', rel='stylesheet')
+        link(href='stylesheets/style.css', rel='stylesheet')
+        link(href='stylesheets/responsive.css', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700,600|Montserrat:400,500,600,700|Raleway:100,300,600,700,800', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', type='text/css', href='fonts/fontawesome-webfont.ttf')
+        style.
+            .async-hide { opacity: 0 !important}   
+        // Global site tag (gtag.js) - Google Analytics
+        script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-97982257-5')
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-97982257-5');
+    body
+        #wrapper
+        header#header.header-transparent.header-fullwidth.header-plain.dark
+          #header-wrap
+            .container
+              #mainMenu-trigger
+                button.lines-button.x
+                  span.lines
+              #mainMenu.light
+                .container
+                  nav
+                    ul
+                      li
+                        a(href='https://www.lumelight.it') Home
+                      li.dropdown
+                        a(href='https://www.lumelight.it/servizi') Servizi
+                        ul.dropdown-menu
+                          li
+                            a(href='https://www.lumelight.it/settore-live') Live
+                          li
+                            a(href='https://www.lumelight.it/settore-televisivo') Televisivo
+                          li
+                            a(href='https://www.lumelight.it/settore-teatrale') Teatri
+                          li
+                            a(href='https://www.lumelight.it/settore-navale') Navale
+                          li
+                            a(href='https://www.lumelight.it/settore-discoteche-club') Disco | Club
+                      li
+                        a(href='https://www.lumelight.it/corsi') Corsi
+                      li
+                        a(href='https://www.lumelight.it/about') About
+                      li
+                        a(href='https://www.lumelight.it/contatti') Contatti
+        section#page-title.page-title-center(data-parallax-image='images/contatti.jpg')
+            .container.contatti
+                .heading.heading.text-left
+                    .page-title
+                        h1 Contatti
+                .row
+                    .col-md-12
+                        h2 Per qualsiasi informazioni sulla formazioni e i servizi offerti, vi invitiamo a contattarci. Vi risponderemo nel più breve tempo possibile.
+                .row
+                    .col-md-12
+                        form#contact(action='contatti', method='POST')
+                            .form-group.col-sm-6
+                                label(for='userName') Nome
+                                input.form-control.required.name(type='text', aria-required='true', name='userName', placeholder='Nome')
+                            .form-group.col-sm-6
+                                label(for='email') Email
+                                input.form-control.required.email(type='email', aria-required='true', name='email', placeholder='Email')
+                            .form-group.col-sm-6
+                                label(for='phone') Telefono
+                                input.form-control.required.phone(type='text', aria-required='true', name='phone', placeholder='Numero di telefono')
+                            .form-group.col-sm-6
+                                label(for='company') Azienda
+                                input.form-control.required.company(type='text', aria-required='false', name='company', placeholder='Nome Azienda')
+                            .form-group.col-sm-12
+                                label(for='textarea') Messaggio
+                                textarea.form-control.required.body(type='body', aria-required='true', name='textarea', rows='9', placeholder='Messaggio')
+                            .row
+                                .text-center
+                                    button#submit         
+                                        i.fa.fa-paper-plane
+                                        | &nbsp;Invia
+                            .row
+                            h2 #{msg} 
+                                    #recaptcha.g-recaptcha(data-sitekey='6LdIakkUAAAAAK578ArvCRUa964jkBb4Hf0uhZUs', data-callback='onSubmit', data-badge='inline', data-size='invisible')
+        script(src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit', async='', defer='')
+        section#map
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.931129047255!2d14.003608615466597!3d42.68400117916652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d933541e354cb2b!2sLume+Lighting!5e0!3m2!1sit!2sit!4v1519034810932', width='100%', height='450', frameborder='0', style='border:0', allowfullscreen='')
+        // Footer
+        footer#footer.footer-light
+            .footer-content
+                .container
+                    .row
+                        .col-md-4
+                            .widget.widget-contact-us(style="background-image: url('images/world-map-dark.png'); background-position: 50% 20px; background-repeat: no-repeat")
+                                h4 Lume Lighting
+                                br
+                                br
+                                br
+                                br
+                        .col-md-4
+                            .grid-item
+                                .widget
+                                h4.widget-title Seguimi su
+                                .social-icons.social-icons-medium.social-icons-rounded.social-icons-colored
+                                    ul
+                                    li.social-facebook
+                                        a(href='https://www.facebook.com/profile.php?id=100008548147932')
+                                            i.fa.fa-facebook
+                                    li.social-youtube
+                                        a(href='https://www.youtube.com/channel/UCog2U5e7sd0L5vNJvMbJTNA?view_as=subscriber')
+                                            i.fa.fa-youtube
+                                    li.social-linkedin
+                                        a(href='https://www.linkedin.com/feed/')
+                                            i.fa.fa-linkedin
+        .copyright-content
+            .container
+                .copyright-text.text-center
+                    | &copy; 2018 LUME LIGHTING Via Mantegna 40 - 64026 - P.Iva 01891700674 CREATIVE LIGHT. All Rights Reserved.
+        a#goToTop
+            i.fa.fa-angle-up.top-icon
+            i.fa.fa-angle-up
+        script(src='js/jquery.js')
+        script(src='js/plugins.js')
+        script(src='js/functions.js')
+        script(src='js/plugin/components/particles.js', type='text/javascript')
+        script(src='js/plugin/components/particles-animation.js', type='text/javascript')   

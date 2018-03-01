@@ -1,78 +1,172 @@
-extends layout
-block content
-    section#section1.parallax.halfscreen(style="background: url('images/teatro.jpg')")
-        .container.text-light.text-right
-            .container-fullscreen
-                .text-left
-                    .heading-hero(data-animation='fadeInDown', data-animation-delay='100') Servizi
-                    p.lead(data-animation='fadeInDown', data-animation-delay='300') 
-    section#section-about.p-b-40
-    .container
-        .page-title
-            h1.font-raleway Le nostre competenze
-        .row
-            .col-md-6(data-animation='fadeInUp', data-animation-delay='300')
-                p 
-                | Lume Lighting nasce dall’idea di supportare lighting designers, registi, produttori, scenografi, macchinisti, team creativo in tutte le fasi progettuali attraverso strumenti tecnologici ed innovativi offrendo consulenza, design e programmazione.
-                | La visione della struttura finale del progetto e la possibilità di poter interagire con essa avvantaggia la creatività e l’efficienza tecnica artistica. 
-                | Ottimizzare la fase creativa e quella esecutiva farà diminuire i tempi di messa in opera riducendo drasticamente i costi di esercizio, differenziati e meglio distribuiti, consentendo alle varie categorie di operatori di lavorare in sincronia. 
-                | Troppe volte succede di trovarsi in ritardo nella preparazione di uno spettacolo o di una installazione. Troppo tempo  viene perso alla ricerca di idee valide proprio sul posto, prenotando magari spazi costosi o a volte impraticabili, lavorando in affanno nella continua lotta contro il tempo. 
-                | Programmare e creare un progetto luci comodamente su software anziché sul posto è la nostra piccola grande rivoluzione nella progettazione che inizierà molto prima rispetto al tradizionale modo di operare.
-                | Il grande vantaggio sarà quello di arrivare sul sito dello show con un setup e uno spettacolo completamente studiato e programmato, abbattendo drasticamente i costi d’esercizio. Nessuna apparecchiatura inutilizzata, nessun lavoro superfluo. Per Venue complesse, utilizziamo il Laser Scan per avere un rilievo topografico dell’ambiente che c’interessa in 3D.
-                | È uno strumento che consente di generare, con precisione millimetrica, un modello digitale in cui poter applicare, testare e modificare le proprie idee e vederne in tempo reale i risultati. 
-            .col-md-6(data-animation='fadeInUp', data-animation-delay='600')
-                p 
-                | Completata l’acquisizione, gestiamo il modello dal software dedicato e lo rielaboriamo con altre applicazioni di gestione 2D e 3D per poi ottimizzarlo e trasferirlo nei software di pre-visualizzazione.
-                | Wysiwyg, standard nell’industria della programmazione e pre-visualizzazione, è un software di progettazione illuminotecnica all-in-one con controllo CAD, Plot, Dati, Visualizzazione, Virtual Show, Real Time Rendering, completamente integrato ed offre la più grande libreria CAD con migliaia di oggetti 3D tra cui scegliere per progettare l'intero spettacolo. 
-                | Wysiwyg supporta diversi protocolli tra cui Art-Net e sACN offrendo la possibilità di visualizzare Video in locale o da MediaServer compatibili CITP, visualizzare Laser Animation e muovere scenari nello spazio 3D. Questo software originale ci permetterà di eliminare completamente il disegno manuale.
-                | L’eccellente funzione di importazione consentirà di caricare anche in scala i dati in nostro possesso nei formati più diffusi, per creare infine un modello specifico sul quale intervenire e velocizzare il processo di progettazione, dai precisi fogli di calcolo integrati fino ad esplorare in tempo reale l’ambiente virtuale della simulazione in 3D.
-                | La possibilità di creare facilmente grafici e report consentirà la massima chiarezza e precisione nella comunicazione tecnica con il team, ottimizzando un lavoro che passa attraverso progettisti e designer fino ad arrivare ai tecnici che opereranno fisicamente sul posto.
-    hr.space
-    .hr-title.hr-long.center
-        abbr
-            | Spettacoli Live | Televisi
-    .portfolio-2-columns
-        .portfolio-item.p-20.hover-3d.img-zoom.pf-illustrations.pf-media.pf-icons.pf-Media
-            .portfolio-item-wrap
-                .portfolio-image
-                    a(href='http://138.68.186.102/live')
-                        img(src='images/live.jpg', alt='')
-                .portfolio-description
-                        a.btn.btn(href='https://www.lumelight.it/live') Live
-    .portfolio-2-columns
-        .portfolio-item.p-20.hover-3d.img-zoom.pf-illustrations.pf-media.pf-icons.pf-Media
-            .portfolio-item-wrap
-                .portfolio-image
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(name='creator', content='Lume Lighting - https://www.lumelight.it')
+        meta(name='description', content='Lume Lighting nasce dall’idea di supportare lighting designers, registi, produttori, scenografi, macchinisti nelle fasi progettuali offrendo consulenza.')
+        title Lumelight.it - Pre-Visualizzazione e Pre-Programmazione per lo spettacolo.
+        link(href='stylesheets/plugins.css', rel='stylesheet')
+        link(href='stylesheets/style.css', rel='stylesheet')
+        link(href='stylesheets/responsive.css', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700,600|Montserrat:400,500,600,700|Raleway:100,300,600,700,800', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', type='text/css', href='fonts/fontawesome-webfont.ttf')
+        style.
+            .async-hide { opacity: 0 !important}   
+        // Global site tag (gtag.js) - Google Analytics
+        script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-97982257-5')
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-97982257-5');
+    body
+        #wrapper
+        header#header.header-transparent.header-fullwidth.header-plain.dark
+          #header-wrap
+            .container
+              #mainMenu-trigger
+                button.lines-button.x
+                  span.lines
+              #mainMenu.light
+                .container
+                  nav
+                    ul
+                      li
+                        a(href='https://www.lumelight.it') Home
+                      li.dropdown
+                        a(href='https://www.lumelight.it/servizi') Servizi
+                        ul.dropdown-menu
+                          li
+                            a(href='https://www.lumelight.it/settore-live') Live
+                          li
+                            a(href='https://www.lumelight.it/settore-televisivo') Televisivo
+                          li
+                            a(href='https://www.lumelight.it/settore-teatrale') Teatri
+                          li
+                            a(href='https://www.lumelight.it/settore-navale') Navale
+                          li
+                            a(href='https://www.lumelight.it/settore-discoteche-club') Disco | Club
+                      li
+                        a(href='https://www.lumelight.it/corsi') Corsi
+                      li
+                        a(href='https://www.lumelight.it/about') About
+                      li
+                        a(href='https://www.lumelight.it/contatti') Contatti
+        section#section1.parallax.halfscreen(style="background: url('images/teatro.jpg')")
+            .container.text-light.text-right
+                .container-fullscreen
+                    .text-left
+                        .heading-hero(data-animation='fadeInDown', data-animation-delay='100') Servizi
+                        p.lead(data-animation='fadeInDown', data-animation-delay='300') 
+        section#section-about.p-b-40
+            .container
+                .page-title
+                    h1 I vantaggi della Pre-Visualizzazione e Pre-Programmazione
+                .row
+                    .col-md-6(data-animation='fadeInUp', data-animation-delay='300')
+                        p 
+                        | Lume Lighting nasce dall’idea di supportare lighting designers, registi, produttori, scenografi, macchinisti, team creativo in tutte le fasi progettuali attraverso strumenti tecnologici ed innovativi offrendo consulenza, design e programmazione.
+                        | La visione della struttura finale del progetto e la possibilità di poter interagire con essa avvantaggia la creatività e l’efficienza tecnica artistica. 
+                        | Ottimizzare la fase creativa e quella esecutiva farà diminuire i tempi di messa in opera riducendo drasticamente i costi di esercizio, differenziati e meglio distribuiti, consentendo alle varie categorie di operatori di lavorare in sincronia. 
+                        | Troppe volte succede di trovarsi in ritardo nella preparazione di uno spettacolo o di una installazione. Troppo tempo  viene perso alla ricerca di idee valide proprio sul posto, prenotando magari spazi costosi o a volte impraticabili, lavorando in affanno nella continua lotta contro il tempo. 
+                        | Programmare e creare un progetto luci comodamente su software anziché sul posto è la nostra piccola grande rivoluzione nella progettazione che inizierà molto prima rispetto al tradizionale modo di operare.
+                        | Il grande vantaggio sarà quello di arrivare sul sito dello show con un setup e uno spettacolo completamente studiato e programmato, abbattendo drasticamente i costi d’esercizio. Nessuna apparecchiatura inutilizzata, nessun lavoro superfluo. Per Venue complesse, utilizziamo il Laser Scan per avere un rilievo topografico dell’ambiente che c’interessa in 3D.
+                        | È uno strumento che consente di generare, con precisione millimetrica, un modello digitale in cui poter applicare, testare e modificare le proprie idee e vederne in tempo reale i risultati. 
+                    .col-md-6(data-animation='fadeInUp', data-animation-delay='600')
+                        p 
+                        | Completata l’acquisizione, gestiamo il modello dal software dedicato e lo rielaboriamo con altre applicazioni di gestione 2D e 3D per poi ottimizzarlo e trasferirlo nei software di pre-visualizzazione.
+                        | Wysiwyg, standard nell’industria della programmazione e pre-visualizzazione, è un software di progettazione illuminotecnica all-in-one con controllo CAD, Plot, Dati, Visualizzazione, Virtual Show, Real Time Rendering, completamente integrato ed offre la più grande libreria CAD con migliaia di oggetti 3D tra cui scegliere per progettare l'intero spettacolo. 
+                        | Wysiwyg supporta diversi protocolli tra cui Art-Net e sACN offrendo la possibilità di visualizzare Video in locale o da MediaServer compatibili CITP, visualizzare Laser Animation e muovere scenari nello spazio 3D. Questo software originale ci permetterà di eliminare completamente il disegno manuale.
+                        | L’eccellente funzione di importazione consentirà di caricare anche in scala i dati in nostro possesso nei formati più diffusi, per creare infine un modello specifico sul quale intervenire e velocizzare il processo di progettazione, dai precisi fogli di calcolo integrati fino ad esplorare in tempo reale l’ambiente virtuale della simulazione in 3D.
+                        | La possibilità di creare facilmente grafici e report consentirà la massima chiarezza e precisione nella comunicazione tecnica con il team, ottimizzando un lavoro che passa attraverso progettisti e designer fino ad arrivare ai tecnici che opereranno fisicamente sul posto.
+        hr.space
+        .hr-title.hr-long.center
+            abbr
+                | Spettacoli Live | Televisi
+        .portfolio-2-columns
+            .portfolio-item.p-20.hover-3d.img-zoom.pf-illustrations.pf-media.pf-icons.pf-Media
+                .portfolio-item-wrap
+                    .portfolio-image
+                        a(href='http://138.68.186.102/live')
+                            img(src='images/live.jpg', alt='')
+                    .portfolio-description
+                            a.btn.btn(href='https://www.lumelight.it/live') Live
+        .portfolio-2-columns
+            .portfolio-item.p-20.hover-3d.img-zoom.pf-illustrations.pf-media.pf-icons.pf-Media
+                .portfolio-item-wrap
+                    .portfolio-image
+                            img(src='images/teatro-gigi.jpg', alt='')
+                    .portfolio-description
+                            a.btn.btn(href='https://www.lumelight.it/televisivo') Televisione
+        hr.space
+        .hr-title.hr-long.center
+            abbr
+                | Spettacoli teatrali | Settore Navale
+        .portfolio-2-columns
+            .portfolio-item.p-20.hover-3d.img-zoom.pf-illustrations.pf-media.pf-icons.pf-Media
+                .portfolio-item-wrap
+                    .portfolio-image
                         img(src='images/teatro-gigi.jpg', alt='')
-                .portfolio-description
-                        a.btn.btn(href='https://www.lumelight.it/televisivo') Televisione
-    hr.space
-    .hr-title.hr-long.center
-        abbr
-            | Spettacoli teatrali | Settore Navale
-    .portfolio-2-columns
-        .portfolio-item.p-20.hover-3d.img-zoom.pf-illustrations.pf-media.pf-icons.pf-Media
-            .portfolio-item-wrap
-                .portfolio-image
-                    img(src='images/teatro-gigi.jpg', alt='')
-                .portfolio-description
-                    a.btn.btn(href='https://www.lumelight.it/teatri') Teatro
-    .portfolio-2-columns
-        .portfolio-item.p-20.hover-3d.img-zoom.pf-illustrations.pf-media.pf-icons.pf-Media
-            .portfolio-item-wrap
-                .portfolio-image
-                    img(src='images/costa.jpg', alt='')
-                .portfolio-description
-                    a.btn.btn(href='https://www.lumelight.it/navale') Navi
-    hr.space
-    .hr-title.hr-long.center
-        abbr
-            | Disco e Club 
-    .portfolio-2-columns
-        .portfolio-item.p-20.hover-3d.img-zoom.pf-illustrations.pf-media.pf-icons.pf-Media
-            .portfolio-item-wrap
-                .portfolio-image
-                    img(src='images/disco&club.jpg', alt='')
-                .portfolio-description
-                    a.btn.btn(href='https://www.lumelight.it/disco-club') Disco e Club
-    hr.space
+                    .portfolio-description
+                        a.btn.btn(href='https://www.lumelight.it/teatri') Teatro
+        .portfolio-2-columns
+            .portfolio-item.p-20.hover-3d.img-zoom.pf-illustrations.pf-media.pf-icons.pf-Media
+                .portfolio-item-wrap
+                    .portfolio-image
+                        img(src='images/costa.jpg', alt='')
+                    .portfolio-description
+                        a.btn.btn(href='https://www.lumelight.it/navale') Navi
+        hr.space
+        .hr-title.hr-long.center
+            abbr
+                | Disco e Club 
+        .portfolio-2-columns
+            .portfolio-item.p-20.hover-3d.img-zoom.pf-illustrations.pf-media.pf-icons.pf-Media
+                .portfolio-item-wrap
+                    .portfolio-image
+                        img(src='images/disco&club.jpg', alt='')
+                    .portfolio-description
+                        a.btn.btn(href='https://www.lumelight.it/disco-club') Disco e Club
+        hr.space
+        // Footer
+        footer#footer.footer-light
+          .footer-content
+            .container
+              .row
+                .col-md-4
+                  .widget.widget-contact-us(style="background-image: url('images/world-map-dark.png'); background-position: 50% 20px; background-repeat: no-repeat")
+                    h4 Lume Lighting
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                .col-md-4
+                  .grid-item
+                    .widget
+                    h4.widget-title Seguimi su
+                    .social-icons.social-icons-medium.social-icons-rounded.social-icons-colored
+                        ul
+                          li.social-facebook
+                            a(href='https://www.facebook.com/profile.php?id=100008548147932')
+                              i.fa.fa-facebook
+                          li.social-youtube
+                            a(href='https://www.youtube.com/channel/UCog2U5e7sd0L5vNJvMbJTNA?view_as=subscriber')
+                              i.fa.fa-youtube
+                          li.social-linkedin
+                            a(href='https://www.linkedin.com/feed/')
+                              i.fa.fa-linkedin
+          .copyright-content
+            .container
+              .copyright-text.text-center
+                | &copy; 2018 LUME LIGHTING Via Mantegna 40 - 64026 - P.Iva 01891700674 CREATIVE LIGHT. All Rights Reserved.
+          a#goToTop
+            i.fa.fa-angle-up.top-icon
+            i.fa.fa-angle-up
+          script(src='js/jquery.js')
+          script(src='js/plugins.js')
+          script(src='js/functions.js')
+          script(src='js/plugin/components/particles.js', type='text/javascript')
+          script(src='js/plugin/components/particles-animation.js', type='text/javascript')

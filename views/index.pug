@@ -1,79 +1,185 @@
-extends layout
-block content
-  section.fullscreen.background-image(style='background-image:url(images/sfondo.jpg);')
-    #particles-js.particles
-    .container-fluid
-      .container-fullscreen
-        .text-middle.text-center.text-light
-          img(src='images/logo.svg', alt='Logo Lume Lighting', width='300px')
-  section#text-rotatory
-    .container-fullscreen.text-center
-      .text-middle
-        h1(data-animation='fadeInUp', data-animation-delay='1200') PRE-PROGRAMMAZIONE | PRE-VISUALIZZAZIONE
-        h2.text-large(data-animation='fadeIn', data-animation-delay='500') 
-          span.text-rotator(data-rotate-effect='fadeIn', data-rotate-speed='3000') LA POTENZA DEL WYSIWYG, CON LUME LIGHTING
-        a(href='http://cast-soft.com/wysiwyg-lighting-design/')
-         img(src='images/wysiwyg.jpg', alt='Logo Wisiwyg Cast Software', width='300px')
-  .seperator.p-b-0.p-t-0
-    i.fa.fa-chevron-down
-  section#p-b-10
-    .container
-        .row
-          h2 Le tue idee in luce
-          .col-md-6.m-t-60
-            .heading.heading.text-left
-              span.lead
-                h6 Il successo di un evento parte da un'attenta valutazione delle possibili problematiche da affrontare, individuando le adeguate soluzioni tecniche ed artistiche necessarie alla sua buona riuscita.
-                h6 Lume Lighting è in grado di progettare, programmare e pre-visualizzare un evento nelle sue singole complessità e forme artistiche già prima che lo spettacolo reale venga realizzato.
-                h6 La nostra esperienza nel settore è il miglior servizio che possiamo offrire per concretizzare la visione del cliente, la nostra tecnologia ci permette di rendere reale quella visione.
-          .col-md-6.m-t-60
-            .heading.heading.text-left
-              span.lead  
-                h6 Dalle prime idee di base arriveremo insieme al risultato finale traducendo la progettazione in animazione.
-                h6 Una vera e propria finestra virtuale su uno spazio reale in grado di ottimizzare il lavoro e consentire risparmi economici, energetici e di tempo.
-                br
-                img(src='images/teatro.jpg', alt='immagine wysiwyg di un teatro', width='100%')
-        a.btn.btn-lg(href='https://www.lumelight.it/servizi') Settori di applicazione
-  .seperator.p-b-0.p-t-0
-    i.fa.fa-chevron-down
-  section#youtube
-    .container
-      iframe(width='560', height='315', src='https://www.youtube.com/embed/wAaDXeBzFh0?rel=0&controls=0&showinfo=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
-  .seperator.p-b-0.p-t-0
-    i.fa.fa-chevron-down
-  section#collaborazioni
-    .container
-      .heading.heading-center
-        h2 Collaborazioni
-        span.lead 
-      ul.grid.grid-5-columns
-        li
-          a(href='http://www.rmmultimedia.it/it/home.html')
-            img(src='images/robe-multimedia.jpg', alt='logo robe multimedia')
-        li
-          a(href='http://www.iociprovostudios.it/')
-            img(src='images/iociprovo.jpg', alt='logo iociprovo studios')
-        li
-          a(href='http://www.cm-srl.net')
-            img(src='images/cm-logo18.jpg', alt='logo cm18')
-        li
-          a(href='https://www.costacrociere.it/B2C/I/Pages/default.aspx')
-            img(src='images/costa_logo.jpg', alt='logo costa crociere')
-        li
-          a(href='https://www.msccrociere.it/it-it/Homepage.aspx')
-            img(src='images/logo_msc.jpg', alt='logo msc crociere')
-    br
-  section.parallax.background-image(style='background-image:url(images/sfondo-nero.jpg);')  
-    #text-rotatory
-      #calltoaction
-        .container-fluid
-          .container-fullscreen
-            .text-center
-              br
-              br
-              h2 Scopri i vantaggi della pre-programmazione
-              h2 Contattaci per ricevere una consulenza
-                br
-                span.text-rotator(data-rotate-effect='fadeIn', data-rotate-speed='3000') GRATUITA
-              a.btn.btn-lg(href='https://www.lumelight.it/contatti') Richiedi
-          
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(name='creator', content='Lume Lighting - https://www.lumelight.it')
+        meta(name='description', content='Lume Light offre soluzioni tecnologiche con software professionali nel campo della pre-visualizzazione e programmazione in diversi settori dello spettacolo.')
+        title Lumelight.it - Pre-Visualizzazione e Pre-Programmazione per Creative Lighting Designers 
+        link(href='stylesheets/plugins.css', rel='stylesheet')
+        link(href='stylesheets/style.css', rel='stylesheet')
+        link(href='stylesheets/responsive.css', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700,600|Montserrat:400,500,600,700|Raleway:100,300,600,700,800', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', type='text/css', href='fonts/fontawesome-webfont.ttf')
+        style.
+            .async-hide { opacity: 0 !important}   
+        // Global site tag (gtag.js) - Google Analytics
+        script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-97982257-5')
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-97982257-5');
+    body
+        #wrapper
+        header#header.header-transparent.header-fullwidth.header-plain.dark
+          #header-wrap
+            .container
+              #mainMenu-trigger
+                button.lines-button.x
+                  span.lines
+              #mainMenu.light
+                .container
+                  nav
+                    ul
+                      li
+                        a(href='https://www.lumelight.it') Home
+                      li.dropdown
+                        a(href='https://www.lumelight.it/servizi') Servizi
+                        ul.dropdown-menu
+                          li
+                            a(href='https://www.lumelight.it/settore-live') Live
+                          li
+                            a(href='https://www.lumelight.it/settore-televisivo') Televisivo
+                          li
+                            a(href='https://www.lumelight.it/settore-teatrale') Teatri
+                          li
+                            a(href='https://www.lumelight.it/settore-navale') Navale
+                          li
+                            a(href='https://www.lumelight.it/settore-discoteche-club') Disco | Club
+                      li
+                        a(href='https://www.lumelight.it/corsi') Corsi
+                      li
+                        a(href='https://www.lumelight.it/about') About
+                      li
+                        a(href='https://www.lumelight.it/contatti') Contatti
+        section.fullscreen.background-image(style='background-image:url(images/sfondo.jpg);')
+          #particles-js.particles
+          .container-fluid
+            .container-fullscreen
+              .text-middle.text-center.text-light
+                img(src='images/logo.svg', alt='Logo Lume Lighting', width='300px')
+        section#text-rotatory
+          .container-fullscreen.text-center
+            .text-middle
+              h1(data-animation='fadeInUp', data-animation-delay='1200') PRE-PROGRAMMAZIONE | PRE-VISUALIZZAZIONE
+              h2.text-large(data-animation='fadeIn', data-animation-delay='500') 
+                span.text-rotator(data-rotate-effect='fadeIn', data-rotate-speed='3000') LA POTENZA DEL WYSIWYG, CON LUME LIGHTING
+              a(href='http://cast-soft.com/wysiwyg-lighting-design/')
+              img(src='images/wysiwyg.jpg', alt='Logo Wisiwyg Cast Software', width='300px')
+        .seperator.p-b-0.p-t-0
+          i.fa.fa-chevron-down
+        section#p-b-10
+          .container
+              .row
+                h2 Le tue idee in luce
+                .col-md-6.m-t-60
+                  .heading.heading.text-left
+                    span.lead
+                      h6 Il successo di un evento parte da un'attenta valutazione delle possibili problematiche da affrontare, individuando le adeguate soluzioni tecniche ed artistiche necessarie alla sua buona riuscita.
+                      h6 Lume Lighting è in grado di progettare, programmare e pre-visualizzare un evento nelle sue singole complessità e forme artistiche già prima che lo spettacolo reale venga realizzato.
+                      h6 La nostra esperienza nel settore è il miglior servizio che possiamo offrire per concretizzare la visione del cliente, la nostra tecnologia ci permette di rendere reale quella visione.
+                .col-md-6.m-t-60
+                  .heading.heading.text-left
+                    span.lead  
+                      h6 Dalle prime idee di base arriveremo insieme al risultato finale traducendo la progettazione in animazione.
+                      h6 Una vera e propria finestra virtuale su uno spazio reale in grado di ottimizzare il lavoro e consentire risparmi economici, energetici e di tempo.
+                      br
+                      img(src='images/teatro.jpg', alt='immagine wysiwyg di un teatro', width='100%')
+              a.btn.btn-lg(href='https://www.lumelight.it/servizi') Settori di applicazione
+        .seperator.p-b-0.p-t-0
+          i.fa.fa-chevron-down
+        section#youtube
+          .container
+            iframe(width='560', height='315', src='https://www.youtube.com/embed/wAaDXeBzFh0?rel=0&controls=0&showinfo=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+        .seperator.p-b-0.p-t-0
+          i.fa.fa-chevron-down
+        section#collaborazioni
+          .container
+            .heading.heading-center
+              h2 Collaborazioni
+              span.lead 
+            ul.grid.grid-5-columns
+              li
+                a(href='http://www.rmmultimedia.it/it/home.html')
+                  img(src='images/robe-multimedia.jpg', alt='logo robe multimedia')
+              li
+                a(href='http://www.iociprovostudios.it/')
+                  img(src='images/iociprovo.jpg', alt='logo iociprovo studios')
+              li
+                a(href='http://www.cm-srl.net')
+                  img(src='images/cm-logo18.jpg', alt='logo cm18')
+              li
+                a(href='https://www.costacrociere.it/B2C/I/Pages/default.aspx')
+                  img(src='images/costa_logo.jpg', alt='logo costa crociere')
+              li
+                a(href='https://www.msccrociere.it/it-it/Homepage.aspx')
+                  img(src='images/logo_msc.jpg', alt='logo msc crociere')
+          br
+        section.parallax.background-image(style='background-image:url(images/sfondo-nero.jpg);')  
+          #text-rotatory
+            #calltoaction
+              .container-fluid
+                .container-fullscreen
+                  .text-center
+                    br
+                    br
+                    h2 Scopri i vantaggi della pre-programmazione
+                    h2 Contattaci per ricevere una consulenza
+                      br
+                      span.text-rotator(data-rotate-effect='fadeIn', data-rotate-speed='3000') GRATUITA
+                    a.btn.btn-lg(href='https://www.lumelight.it/contatti') Richiedi
+        .cookieNotify.modal-strip.modal-bottom.cookie-notify(data-delay='1000', data-expire='30', data-name='websiteCookieslumelighting.com')
+          .container
+            .row
+              .vertical-align
+                .col-md-8.text-sm-center.sm-center.sm-m-b-10.m-t-5
+                  | Questo sito utilizza cookies per rendere al meglio la vostra navigazione. 
+                  a.text-light(href='#')
+                    span
+                      | 
+                      i.fa.fa-info-circle
+                .col-md-4.text-right.sm-text-center.sm-center
+                  button.btn.btn-rounded.btn-sm.m-r-10.modal-close(type='button') Rifiuta
+                  button.btn.btn-light.btn-rounded.btn-outline.btn-sm.modal-confirm(type='button') Accetta
+        // Footer
+        footer#footer.footer-light
+          .footer-content
+            .container
+              .row
+                .col-md-4
+                  .widget.widget-contact-us(style="background-image: url('images/world-map-dark.png'); background-position: 50% 20px; background-repeat: no-repeat")
+                    h4 Lume Lighting
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                .col-md-4
+                  .grid-item
+                    .widget
+                    h4.widget-title Seguimi su
+                    .social-icons.social-icons-medium.social-icons-rounded.social-icons-colored
+                        ul
+                          li.social-facebook
+                            a(href='https://www.facebook.com/profile.php?id=100008548147932')
+                              i.fa.fa-facebook
+                          li.social-youtube
+                            a(href='https://www.youtube.com/channel/UCog2U5e7sd0L5vNJvMbJTNA?view_as=subscriber')
+                              i.fa.fa-youtube
+                          li.social-linkedin
+                            a(href='https://www.linkedin.com/feed/')
+                              i.fa.fa-linkedin
+          .copyright-content
+            .container
+              .copyright-text.text-center
+                | &copy; 2018 LUME LIGHTING Via Mantegna 40 - 64026 - P.Iva 01891700674 CREATIVE LIGHT. All Rights Reserved.
+          a#goToTop
+            i.fa.fa-angle-up.top-icon
+            i.fa.fa-angle-up
+          script(src='js/jquery.js')
+          script(src='js/plugins.js')
+          script(src='js/functions.js')
+          script(src='js/plugin/components/particles.js', type='text/javascript')
+          script(src='js/plugin/components/particles-animation.js', type='text/javascript')      
