@@ -11,6 +11,14 @@ html
         link(href='stylesheets/responsive.css', rel='stylesheet')
         link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700,600|Montserrat:400,500,600,700|Raleway:100,300,600,700,800', rel='stylesheet', type='text/css')
         link(rel='stylesheet', type='text/css', href='fonts/fontawesome-webfont.ttf')
+        // Google Tag Manager
+        script.
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-WBHX8ST');
+        // End Google Tag Manager
         style.
             .async-hide { opacity: 0 !important}   
         // Global site tag (gtag.js) - Google Analytics
@@ -21,6 +29,10 @@ html
             gtag('js', new Date());
             gtag('config', 'UA-97982257-5');
     body
+        // Google Tag Manager (noscript)
+        noscript
+        iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-WBHX8ST', height='0', width='0', style='display:none;visibility:hidden')
+        // End Google Tag Manager (noscript)
         #wrapper
         header#header.header-transparent.header-fullwidth.header-plain.dark
           #header-wrap
@@ -182,4 +194,5 @@ html
           script(src='js/plugins.js')
           script(src='js/functions.js')
           script(src='js/plugin/components/particles.js', type='text/javascript')
-          script(src='js/plugin/components/particles-animation.js', type='text/javascript')      
+          script(src='js/plugin/components/particles-animation.js', type='text/javascript')
+    
