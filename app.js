@@ -73,13 +73,13 @@ app.use(helmet());
 app.use('/', index);
 app.use('/users', users);
 
-app.get('/teatri/', (req, res, next) => {
+app.get('/teatri', (req, res, next) => {
     res.redirect(301, 'https://www.lumelight.it/settore-teatrale');
 });
-app.get('/televisivo/', (req, res, next) => {
+app.get('/televisivo', (req, res, next) => {
     res.redirect(301, 'https://www.lumelight.it/settore-televisivo');
 });
-app.get('/navale/', (req, res, next) => {
+app.get('/navale', (req, res, next) => {
     res.redirect(301, 'https://www.lumelight.it/settore-navale');
 });
 
